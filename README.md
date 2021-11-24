@@ -1,5 +1,6 @@
 # Download Centos 6.10 iso
 http://ftp.iij.ad.jp/pub/linux/centos-vault/6.10/isos/x86_64/
+
 You can use it in VirtualBox or install it in a pysical partition
 
 # Docker
