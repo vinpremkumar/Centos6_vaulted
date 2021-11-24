@@ -133,9 +133,7 @@ and do: ```source ~/.bashrc```
 
 ### Code to verify glibc-2.14 version:
 ```
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #include <stdio.h>
 #include <gnu/libc-version.h>
 int main (void) { puts (gnu_get_libc_version ()); return 0; }
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ```
