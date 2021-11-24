@@ -24,10 +24,10 @@ Here, uncomment the line that says wheel group can run all commands:
 ## Allows people in group wheel to run all commands
 %wheel  ALL=(ALL)       ALL
 
-adduser skh
-passwd skh
+adduser user
+passwd user
 As root user, install sudo and add user to sudoer group (wheel group)
-usermod -aG wheel skh
+usermod -aG wheel user
 
 https://phoenixnap.com/kb/how-to-create-add-sudo-user-centos
 
@@ -36,8 +36,6 @@ sudo yum update
 sudo yum groupinstall "Development Tools"
 
 *********************************
-alsemyskh -> skh
-alsemyretarget -> root
 *********************************
 Install gcc
 sudo yum install gcc gcc-c++
