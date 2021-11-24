@@ -73,7 +73,8 @@ usermod -aG wheel user
 ```
 yum update
 yum groupinstall "Development tools"
-yum install gawk texinfo epel-release gcc gcc-c++ wget zlib2-devel texinfo python-devel libjpeg-turbo libjpeg-turbo-devel zlib-devel giflib  tkinter glibc libpng gcc-c++ wget openssl openssl-devel bzip2-devel libtiff.x86_64 libtiff-devel.x86_64 libtiff-static.x86_64 doxygen doxygen-doxywizard dbus gtk2-devel.x86_64 gtk2.x86_64 gtk+extra.x86_64 gtk+extra-devel.x86_64  pygtk2.x86_64  python-gtkextra.x86_64 pywebkitgtk.x86_64  webkitgtk.x86_64 webkitgtk-devel.x86_64 wxGTK.x86_64 webkitgtk-doc.x86_64 wxGTK-devel.x86_64 glibmm24.x86_64 pygtk2-devel.x86_64  wxGTK-gl.x86_64 wxGTK-media.x86_64 libnotify-devel.x86_64 dkms xorg-x11-drv-nouveau docbook2X
+yum install gawk texinfo epel-release gcc gcc-c++ wget zlib2-devel texinfo python-devel libjpeg-turbo libjpeg-turbo-devel zlib-devel giflib  tkinter glibc libpng gcc-c++ wget openssl openssl-devel bzip2-devel libtiff.x86_64 libtiff-devel.x86_64 libtiff-static.x86_64 doxygen doxygen-doxywizard dbus gtk2-devel.x86_64 gtk2.x86_64 gtk+extra.x86_64 gtk+extra-devel.x86_64  pygtk2.x86_64  python-gtkextra.x86_64 pywebkitgtk.x86_64  webkitgtk.x86_64 webkitgtk-devel.x86_64 wxGTK.x86_64 webkitgtk-doc.x86_64 wxGTK-devel.x86_64 glibmm24.x86_64 pygtk2-devel.x86_64  wxGTK-gl.x86_64 wxGTK-media.x86_64 libnotify-devel.x86_64 dkms xorg-x11-drv-nouveau
+yum install docbook2X
 ```
 These install all the libraries required for install gtk2 (for gtk2 based app development) and python 3.8 (or higher)
 
