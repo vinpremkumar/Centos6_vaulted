@@ -1,5 +1,21 @@
-# DOCKER
+# Download Centos 6.10 iso
+http://ftp.iij.ad.jp/pub/linux/centos-vault/6.10/isos/x86_64/
+You can use it in VirtualBox or install it in a pysical partition
+
+# Docker
+If you would like to try in a docker, use the below command:
+```
 sudo docker run -it  --env="DISPLAY"  --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw"  centos:6.9 bash
+```
+X11 forwarding does not work well if you directly attach to the docker. So instead, run the command
+```
+yum install openssh-server
+service sshd restart
+```
+Now that sshd service is running, find its ipaddress using ```ifconfig``` command and connect to it using X11 forwarded ssh connection
+```
+ssh -Y <username>@<ip address obtained from ifconfig>
+```
 
 # Fix Yum
 ## 1st method:
