@@ -105,9 +105,11 @@ alias pip3='/usr/local/bin/pip3.8'
 and then do: ```source ~/.bashrc```
 
 ## To fix D-Bus
+```
 su
 dbus-uuidgen > /var/lib/dbus/machine-id
-     
+```
+
 # Alt-Installing GLIBC 2.14
 **Source:** _https://stackoverflow.com/questions/35616650/how-to-upgrade-glibc-from-version-2-12-to-2-14-on-centos_
 
