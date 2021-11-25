@@ -89,7 +89,7 @@ tar xzf Python-3.8.9.tgz
 cd Python-3.8.9
 ./configure --enable-optimizations --enable-shared
 make altinstall
-sudo ln -sfn /usr/local/bin/python3.6 /usr/bin/python3.8
+sudo ln -sfn /usr/local/bin/python3.8 /usr/bin/python3.8
 ```
 
 In .bashrc file
