@@ -116,6 +116,12 @@ dbus-uuidgen > /var/lib/dbus/machine-id
 Some users prefer to alt-install glibc 2.14 in centos 6. Although it is not supported directly, we can compile it using the following steps
 ```
 su
+
+yum install gawk texinfo
+mkdir /opt/glibc-2.14; mkdir /opt/glibc-2.14/etc
+sh -c "echo '/usr/local/lib' >> /opt/glibc-2.14/etc/ld.so.conf" 
+sh -c "echo '/opt/lib' >> /opt/glibc-2.14/etc/ld.so.conf"
+
 mkdir ~/glibc_install; cd ~/glibc_install
 wget http://ftp.gnu.org/gnu/glibc/glibc-2.14.tar.gz
 tar zxvf glibc-2.14.tar.gz
